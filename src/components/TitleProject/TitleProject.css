@@ -1,0 +1,18 @@
+.containerTitle{
+    display: flex;
+    justify-content: center;
+}
+
+.firstTitle{
+    color: #0CCE6B;
+    font-size: 12px;
+    font-weight: bold
+   
+}
+
+.lastTitle{
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold
+   
+}
