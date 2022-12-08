@@ -9,8 +9,6 @@ import { Matches } from './pages/Matches/Matches';
 import { Register } from './pages/Register/Register';
 import { Subscribe } from './pages/Subscribe/Subscribe';
 
-// import './App.css'
-
 function App() {
   return (
       <Routes>
