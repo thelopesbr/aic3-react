@@ -25,8 +25,8 @@ export const Login  = () => {
             </form>
             <a  className="forgot-password" href="#">Esqueceu a senha?</a>
             <div className="buttons">
-                <button className="loginButton">LOGIN</button>
-                <button className="registerButton">CRIAR CONTA</button>
+                <button className="loginButton" >LOGIN</button>
+                <button className="registerButton" >CRIAR CONTA </button>
             </div>
           </div>
           <img className="imgLogin" src={girl} alt="" />

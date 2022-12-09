@@ -9,8 +9,10 @@ export const Register  = () => {
         <a className="links" id="paracadastro"></a>
         <a className="links" id="paralogin"></a>
         
-        <div className="content">      
+        <div className="content">
+            <h1>Cadastro</h1>      
         <div id="cadastro">
+            
             <form method="post" action=""> 
 
             <p> 
@@ -26,6 +28,7 @@ export const Register  = () => {
                 <label for="nome_cad">Nome</label>
                 <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="Juan Carlos"/>
             </p>
+            
             <p>
                 <label for="cpf_cad">CPF</label>
                 <input type="number" name="cpf_cad" id="cpf_cad" required="required" placeholder="123.456.789-00"/>
