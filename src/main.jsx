@@ -12,6 +12,7 @@ import { Register } from './pages/Register/Register'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>    
-    <Register />
+    {/* <Register /> */}
+    <Login />
   </BrowserRouter>
 )
