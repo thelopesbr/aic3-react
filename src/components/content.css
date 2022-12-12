@@ -1,27 +1,69 @@
-.container{
-  border-radius:20px;
-  width: 90%;
-  height: 90vh;
+/* container principal*/
+.container_principal{
+  width: 100%;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.container{
+  border-radius:5px;
+  width: 96%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   flex-direction: column;
   padding: 3%;
+  background-color: white;
+  border: 1px solid
+
 }
+/* barra de pesquisa e checkbox*/
 .container .pesquisas_e_filtros{
   display: inherit;
   flex-direction: column;
   flex-grow: 1;
   width: 100%;
   align-items:center;
-  justify-content:space-evenly
+  justify-content:space-evenly;
 }
-.container .pesquisas_e_filtros .search{
+.container .pesquisas_e_filtros span{
+  width: 100%;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+.container .pesquisas_e_filtros .search {
   display: flex;
   width: 100%;
   justify-content: flex-start;
-  align-items: center; 
 }
+.pesquisas_e_filtros .search .search_bar{
+  display: flex;
+  width: 50%;
+  align-items: center;
+}
+.container .pesquisas_e_filtros .search .search_bar svg{
+  position: absolute;
+  left: 47%;
+}
+.pesquisas_e_filtros .search .checkbox_filter{
+  display: flex;
+  width: 50%;
+  gap: 2%;
+  align-items: center;
+}
+
+.container .pesquisas_e_filtros .search .search_bar input::placeholder{
+ padding-left: 2em;
+ font-size: 1.2em;
+}
+.icon-search{
+  width: 20px;
+  height: 20px;
+}
+
 #include_self{
   position: relative;
   height: 25px;
@@ -34,10 +76,11 @@
 .search input:checked ~.checkbox_include{
   background-color: #1B4965;
 }
+
 #search{
   position: relative;
   border-radius: 20px;
-  width: 50%;
+  width: 100%;
   height: 35px;
 }
 .pesquisas_e_filtros .search label{
@@ -47,15 +90,100 @@
   position: absolute;
   left:46%;
 }
+/* container */
 .container .body_container{
-  flex-grow: 8;
-  width: 100%;
+  flex-grow: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 110%;
+  height: 100%;
+  padding: 1% 0; 
 }
+.container_effect{
+  height: 5%;
+  width: 100%;
+  clip-path: polygon(2% 1%, 98% 0, 100% 100%, 0% 100%);
+  background-color: #1C1B1F;
+  z-index: -1;
+
+}
+.container .body_container .container_cards{
+  background-color: #1B4965;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+
+.container .body_container .container_cards .card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 23%;
+  height: 80%;
+  background-color: #337E96;
+  border-radius: 5px;
+  flex-direction: column;
+}
+.container .body_container .container_cards .card:hover{
+  transform: scale(1.1);
+}
+.container_card .card .img-content{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  
+}
+.container_cards .card img{
+  object-fit: contain;
+  margin-bottom: 20px;
+  margin: 10px;
+  display: flex;
+
+
+}
+.container_cards .card .info_card{
+  display: flex;
+  color: white;
+  flex-direction: column;
+}
+.container_cards .card .info_card div{
+  padding: 0.5em;
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.5em;
+  width: 15em;
+}
+.card .info_card div p{
+  font-weight: 600;
+  font-size: 0.8em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+}
+.card .info_card div svg{
+  font-weight:lighter;
+}
+
+/*paginação*/
 .container .pagination{
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   flex-grow: 1;
   width: 100%;
 }
+.container .pagination .pagination_item{
+  padding: 10px;
+  list-style: none;
+  background-color: #1B4965;
+
+}
+.container .pagination .pagination_link{
+  color: white;
+  text-decoration: none;
+}
+
+
