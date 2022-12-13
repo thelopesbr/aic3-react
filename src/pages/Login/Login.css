@@ -85,6 +85,7 @@
    width: 100%;
    height: 2.5em;
    border: 1px solid #b2b2b2;
+    padding: 0 0.5em;
    
    -webkit-border-radius: 3px;
    border-radius: 3px;
@@ -102,6 +103,22 @@
     transition: 0.8s;
 }
 
+.personIcon {
+    position: absolute;
+    margin-top: 5.5%;
+    margin-left: 70%;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.visibilityIcon {
+    position: absolute;
+    margin-top: 6%;
+    margin-left: 70%;
+    width: 1.5em;
+    height: 1.5em;
+}
+
 .loginButton:hover {
     background-color: #08a554;
 }
@@ -109,16 +126,6 @@
 .registerButton:hover {
     background-color: #265f72;
 }
-
-.icons {
-    position: block;
-    font-family: 'Material Icons';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    display: inline-block;
-}
-
 
 .imgLogin {
     width: 250px;
@@ -132,7 +139,7 @@
 .forgot-password {
     color: #0CCE6B;
     font-size: 0.8em;
-    margin: 5% 0 5% 69%;
+    margin: 5% 0 5% 60%;
     text-decoration: none;
 }
 
@@ -149,3 +156,34 @@
     height: 100%;
 }
 
+@media screen and (max-width: 1024px) {
+    .containerLogin {
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .containerLogin {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .containerLogin {
+        width: 90vw;
+    }
+
+    .imgLogin {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .containerLogin {
+        width: 100vw;
+    }
+
+    .imgLogin {
+        display: none;
+    }
+}
