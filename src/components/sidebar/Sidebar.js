@@ -1,4 +1,8 @@
 import "sidebar3.css";
+import { AiOutlineHome, AiOutlineSetting } from "react-icons/ai";
+import { TbTournament } from "react-icons/tb";
+import {FiLogOut} from "react-icons/fi"
+
 function Sidebar() {
   return (
     <div className="sidebar">
@@ -15,19 +19,19 @@ function Sidebar() {
       <ul className="nav-list">
         <li>
           <a href="#">
-            <i className="bx bx-home-alt-2"></i>
+            <AiOutlineHome />
             <span className="link-name">Inicio</span>
           </a>
         </li>
         <li>
           <a href="#">
-            <i className="bx bx-flag"></i>
+            <TbTournament />
             <span className="link-name">Torneios</span>
           </a>
         </li>
         <li>
           <a href="#">
-            <i className="bx bx-cog"></i>
+            <AiOutlineSetting />
             <span className="link-name">Configurações</span>
           </a>
         </li>
@@ -43,7 +47,7 @@ function Sidebar() {
         </div>
       </div>
       <div className="logout-container" id="logout">
-        <i className="bx bx-exit"></i>
+        <FiLogOut/>
         <span>Sair</span>
       </div>
     </div>
