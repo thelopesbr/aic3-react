@@ -1,45 +1,60 @@
-import "../styles/sidebar.css"
+import "./sidebar.css";
+import { AiOutlineHome, AiOutlineSetting } from "react-icons/ai";
+import { TbTournament } from "react-icons/tb";
+import { IoMdExit } from "react-icons/io";
+import ContraiMenu from "./contraiMenu";
+import logo from "./logo.svg";
 
-const Sidebar = () => {
+function Sidebar() {
   return (
-    //criar sidebar
-    <aside class="sidebar">
-      <div class="sidebar-inner">
-        <header class="sidebar-header">
-          <button
-            type="button"
-            class="sidebar-burger"
-            onclick="toggleSidebar()"
-          ></button>
-          <img src="./assets/blocklord-logo.png" class="sidebar-logo" />
-        </header>
-        <nav class="sidebar-nav">
-          <button type="button">
-            <img src="./assets/icon-home.svg" />
-            <span>Home</span>
-          </button>
-          <button type="button">
-            <img src="./assets/icon-settings.svg" />
-            <span style="animation-delay: 0.1s">Settings</span>
-          </button>
-          <button type="button">
-            <img src="./assets/icon-levels.svg" />
-            <span style="animation-delay: 0.2s">Levels</span>
-          </button>
-          <button type="button">
-            <img src="./assets/icon-accounts.svg" />
-            <span style="animation-delay: 0.3s">Accounts</span>
-          </button>
-        </nav>
-        <footer class="sidebar-footer">
-          <button type="button">
-            <img src="./assets/icon-lock.svg" />
-            <span>Logout</span>
-          </button>
-        </footer>
+    <div className="sidebar">
+      <ContraiMenu />
+      <div className="logo-content">
+        <div className="logo">
+          <div className="logo-name">
+            <div className="logo-name">
+              <span>padel</span>tour.
+            </div>
+          </div>
+        </div>
+        <img src={logo} id="button_contract" />
       </div>
-    </aside>
+      <ul className="nav-list">
+        <li>
+          <a href="#">
+            <AiOutlineHome />
+            <span className="link-name">Inicio</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <TbTournament />
+            <span className="link-name">Torneios</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <AiOutlineSetting />
+            <span className="link-name">Configurações</span>
+          </a>
+        </li>
+      </ul>
+      <div className="profile-container">
+        <div className="profile">
+          <div className="profile-details">
+            <img src="profile.png" alt="profile-photo" />
+            <div className="name-profile">
+              <span>Flávio</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="logout-container" id="logout">
+        <IoMdExit />
+        <span>Sair</span>
+      </div>
+    </div>
   );
 }
 
-export default Sidebar
+export default Sidebar;

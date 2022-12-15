@@ -95,14 +95,16 @@
   transition: all 0.4s ease;
 }
 .sidebar ul li a svg{
-  height: 50px;
-  min-width: 50px;
+
+  height: 25px;
+  min-width: 25px;
   line-height: 50px;
-  text-align: center;
+  margin-left: 15px;
 }
 .sidebar.active ul li a span{
-  font-weight: 500;
+  font-weight: 400;
   display: initial;
+  padding: 0 20px;
 }
 .sidebar ul li a span{
   display: none;
@@ -111,8 +113,8 @@
 .sidebar ul li a:hover{
   color: var(--color-secondary);
 }
-.sidebar ul li a svg{
-  height: 50px !important;
+.sidebar ul li a i{
+  height: 50px;
   min-width: 50px;
   border-radius: 12px;
   line-height: 50px;
