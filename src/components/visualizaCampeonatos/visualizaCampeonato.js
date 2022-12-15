@@ -1,10 +1,10 @@
-import './container.css';
+import './content.css';
 import React from "react";
 import { Pagination, PaginationItem, PaginationLink } from 'reactstrap';
 import {AiOutlineSearch} from 'react-icons/ai';
 import { BiDollar, BiCalendar, BiMap } from "react-icons/bi";
 import {BsPeople} from "react-icons/bs";
-import logo from "./Group.svg";
+import logo from "./padel-thumbnail.jpg";
 
 function Container(){
   return (
@@ -35,7 +35,7 @@ function Container(){
           <div className="container_effect"></div>
           <div className="container_cards">
             <div className="card">
-              <div className="img-content">
+              <div className="img_content">
                 <img
                   src={logo}
                   alt="photo-championship"
@@ -62,7 +62,7 @@ function Container(){
               </div>
             </div>
             <div className="card">
-              <div className="img-content">
+              <div className="img_content">
                 <img
                   src={logo}
                   alt="photo-championship"
@@ -89,7 +89,7 @@ function Container(){
               </div>
             </div>
             <div className="card">
-              <div className="img-content">
+              <div className="img_content">
                 <img
                   src={logo}
                   alt="photo-championship"

@@ -1,22 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500;600;700;800;900&display=swap");
 /* container principal*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
 .container_principal{
   width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  
+  z-index:-2;
+  position: relative;
+
 }
-.container{
+.container_principal .container{
   border-radius:5px;
-  width: 96%;
+  width: 94%;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  padding: 3%;
   background-color: white;
-  border: 1px solid
 
 }
 /* barra de pesquisa e checkbox*/
@@ -25,14 +34,14 @@
   flex-direction: column;
   flex-grow: 1;
   width: 100%;
+  height: 20%;
   align-items:center;
   justify-content:space-evenly;
 }
 .container .pesquisas_e_filtros span{
   width: 100%;
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
-  margin-bottom: 1.5em;
 }
 .container .pesquisas_e_filtros .search {
   display: flex;
@@ -46,13 +55,14 @@
 }
 .container .pesquisas_e_filtros .search .search_bar svg{
   position: absolute;
-  left: 47%;
+  left: 46%;
 }
 .pesquisas_e_filtros .search .checkbox_filter{
   display: flex;
   width: 50%;
   gap: 2%;
   align-items: center;
+  font-size: 1em;
 }
 
 .container .pesquisas_e_filtros .search .search_bar input::placeholder{
@@ -96,14 +106,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 110%;
-  height: 100%;
+  width: 105%;
+  height: 80%;
   padding: 1% 0; 
 }
 .container_effect{
   height: 5%;
   width: 100%;
-  clip-path: polygon(2% 1%, 98% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(5% 1%, 95% 0, 100% 100%, 0% 100%);
   background-color: #1C1B1F;
   z-index: -1;
 
@@ -112,47 +122,56 @@
   background-color: #1B4965;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 100%;
   height: 100%;
+  padding: 1% 1%;
 }
 
 .container .body_container .container_cards .card{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 23%;
-  height: 80%;
+  width: 30%;
+  height: 100%;
   background-color: #337E96;
   border-radius: 5px;
   flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  padding: 1%;
 }
-.container .body_container .container_cards .card:hover{
-  transform: scale(1.1);
+
+
+.body_container .container_cards .card .img_content{ 
+  height: 60%;
+  width: 70%;
 }
-.container_card .card .img-content{
-  display: flex;
+.body_container .container_cards .card:hover{
+  transform: scale(1.05);
+}
+
+.container_cards .card img{
+  object-fit: fill;
   width: 100%;
   height: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
   
-}
-.container_cards .card img{
-  object-fit: contain;
-  margin-bottom: 20px;
-  margin: 10px;
-  display: flex;
-
-
 }
 .container_cards .card .info_card{
   display: flex;
   color: white;
   flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: space-evenly;
+  padding-left: 2%;
+  
 }
 .container_cards .card .info_card div{
   padding: 0.5em;
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   gap: 0.5em;
   width: 15em;
 }
@@ -164,7 +183,8 @@
   text-overflow:ellipsis;
 }
 .card .info_card div svg{
-  font-weight:lighter;
+  font-size: 1em;
+  
 }
 
 /*paginação*/
@@ -174,16 +194,39 @@
   align-items: center;
   flex-grow: 1;
   width: 100%;
+  height: 10%; 
+}
+
+.container .pagination:first-child{
+  display: flex;
+  gap: 3%;
 }
 .container .pagination .pagination_item{
   padding: 10px;
   list-style: none;
-  background-color: #1B4965;
+  color: #1B4965;
+  border:1px solid #1B4965;
 
 }
-.container .pagination .pagination_link{
+.pagination_select{
+  background-color: #1B4965;
   color: white;
+
+}
+
+.container .pagination .pagination_link{
+  color: #1B4965;;
   text-decoration: none;
 }
 
 
+/*responsividade do texto*/
+@media screen and (max-width:1000px){
+  .card .info_card div p{
+    font-size: 0.6em;
+  }
+  .container .pesquisas_e_filtros .search .search_bar svg{
+    left: 45%;
+  }
+
+}
