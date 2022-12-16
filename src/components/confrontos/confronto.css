@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+.confronto{
+  display: flex;
+  width: 100%;
+  background-color: #1B4965;
+  height: 150px;
+  justify-content: center;
+  color: white;
+  padding: 0 20px;
+}
+.confronto .pair{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 35%;
+  height: 100%;
+  padding: 15px;
+  
+ 
+}
+.confronto .pair .participant{
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  height: 50%;
+
+}
+.confronto .pair .participant:nth-child(2){
+  margin-left: 40px;
+  margin-top: -30px;
+
+}
+.confronto .pair .participant img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: white;
+}
+.confronto .pair .participant span{
+  width: 150px;
+  margin-left: 10px;
+  
+}
+.confronto .versus{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+  gap: 7%;
+  margin-top: 10px;
+}
+.confronto .versus .container_info {
+  display: flex;
+  flex-direction: column; 
+}
+.info {
+  width:150%;
+  margin-bottom: 5px;
+}
+.confronto .versus .container_info div{
+  display: flex;
+  gap: 10%;
+}
+.confronto .versus span{
+  font-size: 24px;
+  letter-spacing: 5px;
+  font-weight: 700;
+}
+.confronto .versus .container_info .info span{
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+
+
+
+
+
