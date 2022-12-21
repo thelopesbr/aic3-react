@@ -2,13 +2,26 @@ import "./sidebar.css";
 import { AiOutlineHome, AiOutlineSetting } from "react-icons/ai";
 import { TbTournament } from "react-icons/tb";
 import { IoMdExit } from "react-icons/io";
-import ContraiMenu from "./contraiMenu";
-import logo from "./logo.svg";
 
-function Sidebar() {
+
+import logo from "../../assets/logo.svg";
+import profile from "./profile.svg";
+
+export const Sidebar = () => {
+
+  let sidebar = document.querySelector(".sidebar");
+
+  sidebar.onmouseenter = function () {
+    sidebar.classList.toggle("active");
+  };
+  sidebar.onmouseleave = function () {
+    sidebar.classList.remove("active");
+  };
+
+
   return (
     <div className="sidebar">
-      <ContraiMenu />
+      <contraiMenu />
       <div className="logo-content">
         <div className="logo">
           <div className="logo-name">
@@ -42,7 +55,7 @@ function Sidebar() {
       <div className="profile-container">
         <div className="profile">
           <div className="profile-details">
-            <img src="profile.png" alt="profile-photo" />
+            <img src={profile} alt="profile-photo" />
             <div className="name-profile">
               <span>Flávio</span>
             </div>
@@ -56,5 +69,3 @@ function Sidebar() {
     </div>
   );
 }
-
-export default Sidebar;

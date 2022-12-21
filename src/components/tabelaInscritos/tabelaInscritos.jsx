@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./inscritos.css";
 import { Table, FormGroup, Input, Button } from "reactstrap";
 
-function tabelaInscrito() {
+export const TabelaInscrito = () => {
   return (
     <div>
       <Table responsive className="tabela">
@@ -62,4 +62,4 @@ function tabelaInscrito() {
     </div>
   );
 }
-export default tabelaInscrito;
+

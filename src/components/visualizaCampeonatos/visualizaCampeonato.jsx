@@ -6,7 +6,9 @@ import { BiDollar, BiCalendar, BiMap } from "react-icons/bi";
 import { BsPeople } from "react-icons/bs";
 import logo from "./padel-thumbnail.jpg";
 
-function Container() {
+import { Card } from "./card";
+
+export const Campeonato = () => {
   return (
     <div className="container_principal">
       <main className="container">
@@ -34,87 +36,9 @@ function Container() {
         <div className="body_container">
           <div className="container_effect"></div>
           <div className="container_cards">
-            <div className="card">
-              <div className="img_content">
-                <img
-                  src={logo}
-                  alt="photo-championship"
-                  className="photo_championship"
-                />
-              </div>
-              <div className="info_card">
-                <div>
-                  <BiDollar className="icon_card" />
-                  <p>VALOR DO CAMPEONATO</p>
-                </div>
-                <div>
-                  <BiCalendar className="icon_card" />
-                  <p>DATA DO CAMPEONATO</p>
-                </div>
-                <div>
-                  <BiMap className="icon_card" />
-                  <p>LOCAL DO CAMPEONATO</p>
-                </div>
-                <div>
-                  <BsPeople className="icon_card" />
-                  <p>NR DE DUPLAS</p>
-                </div>
-              </div>
-            </div>
-            <div className="card">
-              <div className="img_content">
-                <img
-                  src={logo}
-                  alt="photo-championship"
-                  className="photo_championship"
-                />
-              </div>
-              <div className="info_card">
-                <div>
-                  <BiDollar className="icon_card" />
-                  <p>VALOR DO CAMPEONATO</p>
-                </div>
-                <div>
-                  <BiCalendar className="icon_card" />
-                  <p>DATA DO CAMPEONATO</p>
-                </div>
-                <div>
-                  <BiMap className="icon_card" />
-                  <p>LOCAL DO CAMPEONATO</p>
-                </div>
-                <div>
-                  <BsPeople className="icon_card" />
-                  <p>NR DE DUPLAS</p>
-                </div>
-              </div>
-            </div>
-            <div className="card">
-              <div className="img_content">
-                <img
-                  src={logo}
-                  alt="photo-championship"
-                  className="photo_championship"
-                />
-              </div>
-              <div className="info_card">
-                <div>
-                  <BiDollar className="icon_card" />
-                  <p>VALOR DO CAMPEONATO</p>
-                </div>
-                <div>
-                  <BiCalendar className="icon_card" />
-                  <p>DATA DO CAMPEONATO</p>
-                </div>
-                <div>
-                  <BiMap className="icon_card" />
-                  <p>LOCAL DO CAMPEONATO</p>
-                </div>
-                <div>
-                  <BsPeople className="icon_card" />
-                  <p>NR DE DUPLAS</p>
-                </div>
-              </div>
-            </div>
+              <Card img="./padel-thumbnail.jpg" valor="11" data="hoje" nrDuplas="12" local="RG"/>
+              <Card img="./padel-thumbnail.jpg" valor="12" data="hoje" nrDuplas="12" local="RG"/>
+              <Card img="./padel-thumbnail.jpg" valor="13" data="hoje" nrDuplas="12" local="RG"/>
           </div>
         </div>
         <div className="pagination">
@@ -150,4 +74,4 @@ function Container() {
     </div>
   );
 }
-export default Container;
+

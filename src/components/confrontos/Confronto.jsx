@@ -2,7 +2,8 @@ import "./confronto.css";
 import { MdSportsTennis } from "react-icons/md";
 import { AiOutlineClockCircle } from "react-icons/ai";
 import profile from "./profile.svg";
-function Confronto() {
+
+export const Confronto = () => {
   return (
     <div className="confronto">
       <div className="pair">
@@ -42,4 +43,3 @@ function Confronto() {
   );
 }
 
-export default Confronto;

@@ -1,14 +1,14 @@
 import "./formulario.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import React, { useState } from "react";
+import { React, useState } from "react";
 import { Form, FormGroup, Label, Input, FormText, Button } from "reactstrap";
 import { BiDollar, BiCalendar, BiMap } from "react-icons/bi";
 import { BsPeople } from "react-icons/bs";
 import { AiOutlineArrowRight } from "react-icons/ai";
-import logo from "./aqua_padel.png";
+import logo from "./aqua_padel.jpg";
 import { useForm } from "react-hook-form";
 
-function FormCampeonato() {
+export const FormCampeonato = () => {
   const { register, handleSubmit, setValue } = useForm();
   const onSubmit = (e) => {
     console.log(e);
@@ -231,4 +231,4 @@ function FormCampeonato() {
     </div>
   );
 }
-export default FormCampeonato;
+
