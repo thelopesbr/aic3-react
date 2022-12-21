@@ -1,0 +1,11 @@
+.add{
+  background-color: #0CCE6B;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  color: white;
+  transition: 0.3s;
+}
+.add:hover{
+  background-color: #0ca355;
+}

@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500;600;700;800;900&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+:root{
+  --color-principal:#1B4965;
+  --color-secondary:#0CCE6B;
+}
+
+.sidebar{
+  height: 100%;
+  width: 78px;
+  background-color: var(--color-principal);
+  position: fixed;
+  transition: 0.5s ease
+}
+.sidebar.active{
+  width: 240px;
+  transition: 0.5s ease;
+}
+
+
+.sidebar .logo-content .logo{
+  color: white;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  padding-left: 10px;
+  opacity:0;
+  pointer-events: none;
+
+}
+
+.sidebar.active .logo-content .logo{
+  opacity: 1;
+  pointer-events: none;
+}
+.logo-content .logo i{
+  font-size: 2em;
+  margin-right: 5px;
+}
+.logo-content .logo .logo-name{
+  font-size: 1.5em;
+}
+.logo-content .logo .logo-name span{
+  color: var(--color-secondary) ;
+}
+.sidebar #button_contract{
+  position: absolute;
+  color: white;
+  left: 50%;
+  top: 5px;
+  font-size: 1em;
+  height: 3em;
+  width: 3em;
+  text-align: center;
+  line-height: 3em;
+  transform: translateX(-50%);
+}
+.sidebar.active #button_contract{
+  left: 90%;
+  padding-right: 5px;
+ 
+}
+.sidebar .logo-content .contract{
+  display: none 
+}
+.sidebar.active .logo-content .contract{
+  display: initial
+}
+.sidebar ul{
+  margin-top: 20px;
+  padding-left: 5%;
+}
+.sidebar ul li{
+  position: relative;
+  height: 60px;
+  width: 100%;
+  margin: 0 5px;
+  list-style: none;
+  line-height: 80px;
+
+}
+
+.sidebar ul li a{
+  color: white;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+.sidebar ul li a svg{
+
+  height: 25px;
+  min-width: 25px;
+  line-height: 50px;
+  margin-left: 15px;
+}
+.sidebar.active ul li a span{
+  font-weight: 400;
+  display: initial;
+  padding: 0 20px;
+}
+.sidebar ul li a span{
+  display: none;
+}
+
+.sidebar ul li a:hover{
+  color: var(--color-secondary);
+}
+.sidebar ul li a i{
+  height: 50px;
+  min-width: 50px;
+  border-radius: 12px;
+  line-height: 50px;
+  text-align: center;
+}
+.sidebar .profile-container{
+  position: absolute;
+  color: white;
+  bottom: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10%;
+}
+.sidebar .profile-container .profile{
+  position: relative;
+  padding: 10px 6px;
+  height: 60px;
+}
+.profile-container .profile .profile-details{
+  display: flex;
+  align-items: center;
+}
+.profile .profile-details img{
+  height: 45px;
+  width: 45px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.profile .profile-details .name-profile{
+  margin-left: 10px;
+  font-size: 1em;
+}
+.sidebar .profile .profile-details .name-profile{
+  margin-left: 10px;
+  font-size: 1em;
+  display: none;
+}
+.sidebar.active .profile .profile-details .name-profile{
+  margin-left: 10px;
+  font-size: 1em;
+  display: initial;
+}
+.sidebar #logout{
+  position: absolute;
+  bottom: 0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  gap: 14px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  width: 60%;
+  margin: 10%;
+  color: white;
+  bottom: 2%;
+
+}
+.sidebar.active #logout span{
+  display: initial;
+}
+.sidebar #logout span{
+  display: none;
+}
+.sidebar #logout:hover{
+  background: #194158;
+
+}

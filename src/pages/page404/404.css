@@ -1,0 +1,45 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding:5vh
+}
+.container img{
+  height:50vh ;
+  width: 50vw;
+
+}
+.container p{
+  height: 10vh;
+  font-size:3vh;
+  vertical-align: center;
+  text-align:center
+}
+.container .refreshPage{
+  height: 8vh;
+  background-color: #0CCE6B;
+  border: none;
+  width: 30%;
+  transition: 0.3s;
+  font-size: 100%;
+}
+
+.container .refreshPage:hover{
+  background-color: #0ca355;
+
+}
+@media only screen and (max-width:1000px) {
+  .container .refreshPage{
+    font-size: 70%;
+  }
+  
+}
+@media only screen and (max-width:600px) {
+  .container .refreshPage{
+    font-size: 60%;
+  }
+  
+}
