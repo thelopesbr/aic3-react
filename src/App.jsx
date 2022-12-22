@@ -8,6 +8,7 @@ import { Login } from './pages/Login/Login';
 import { Matches } from './pages/Matches/Matches';
 import { Register } from './pages/Register/Register';
 import { Subscribe } from './pages/Subscribe/Subscribe';
+import { Error404 } from './pages/page404/error404.jsx'
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
         <Route path="/matches" element={<Matches />} />
         <Route path="/register" element={<Register />} />
         <Route path="/subscribe" element={<Subscribe />} />
-        <Route path="*" element={<Navigate to="/login" replace/>}/>
+        <Route path="*" element={<Error404 />}/>
       </Routes>
   )
 }

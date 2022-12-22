@@ -1,6 +1,3 @@
-
-
-
 import "./Login.css"
 import { Title } from "../../components/TitleProject/TitleProject"
 import girl from "../../assets/girl.svg"
