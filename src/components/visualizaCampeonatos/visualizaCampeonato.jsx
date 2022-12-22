@@ -36,9 +36,10 @@ export const Campeonato = () => {
         <div className="body_container">
           <div className="container_effect"></div>
           <div className="container_cards">
-              <Card img="./padel-thumbnail.jpg" valor="11" data="hoje" nrDuplas="12" local="RG"/>
+            <Card img="" valor="1" data="hoje" nrDuplas="12" local="RG"/>
+              {/* <Card img="./padel-thumbnail.jpg" valor="11" data="hoje" nrDuplas="12" local="RG"/>
               <Card img="./padel-thumbnail.jpg" valor="12" data="hoje" nrDuplas="12" local="RG"/>
-              <Card img="./padel-thumbnail.jpg" valor="13" data="hoje" nrDuplas="12" local="RG"/>
+              <Card img="./padel-thumbnail.jpg" valor="13" data="hoje" nrDuplas="12" local="RG"/> */}
           </div>
         </div>
         <div className="pagination">

@@ -18,7 +18,6 @@ export const Sidebar = () => {
     sidebar.classList.remove("active");
   };
 
-
   return (
     <div className="sidebar">
       <contraiMenu />
@@ -68,4 +67,4 @@ export const Sidebar = () => {
       </div>
     </div>
   );
-}
+};
