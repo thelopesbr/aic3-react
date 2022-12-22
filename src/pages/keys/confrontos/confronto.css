@@ -9,11 +9,17 @@
   display: flex;
   width: 100%;
   background-color: #1B4965;
-  height: 150px;
   justify-content: center;
   color: white;
-  padding: 0 20px;
+  margin-top: 2%;
+  padding: 3%;
+  border-radius: 0.5rem;
 }
+
+.confronto:last-child{
+  margin-bottom: 2%;
+}
+
 .confronto .pair{
   display: flex;
   flex-direction: column;
@@ -21,25 +27,23 @@
   justify-content: center;
   width: 35%;
   height: 100%;
-  padding: 15px;
-  
- 
+  padding: 1%;
+
 }
 .confronto .pair .participant{
   display: flex;
   align-items: center;
   gap: 5%;
-  height: 50%;
+  height: 100%;
 
 }
 .confronto .pair .participant:nth-child(2){
-  margin-left: 40px;
-  margin-top: -30px;
-
+  margin-left: 15%;
+  margin-top: -10%;
 }
 .confronto .pair .participant img{
-  height: 50px;
-  width: 50px;
+  height: 3.5rem;
+  width: 3.5rem;
   border-radius: 50%;
   background-color: white;
 }
@@ -54,7 +58,6 @@
   justify-content: center;
   align-items: center;
   width: 30%;
-  height: 100%;
   gap: 7%;
   margin-top: 10px;
 }
